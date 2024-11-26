@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entries</title>
+    <link rel="stylesheet" href="styles/entry.css">
+</head>
+
+<body>
+    <% if (posts.length !==0) { %>
+
+        <ul>
+            <% for (let i=0; i < posts.length; i++) { %>
+                <div>
+                    <li>Entry Number: <%= posts[i].id %>
+                    <li>Thank you for your post, <%= posts[i].author %>!</li>
+                    <li>Title: <%= posts[i].title %>
+                    </li>
+                    <li>Content: <%= posts[i].content %>
+                    </li>
+                </div>
+                <% } %>
+        </ul>
+        <% } else { %>
+            <p>No Data!</p>
+            <% } %>
+
+</body>
+
+</html>

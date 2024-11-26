@@ -1,0 +1,26 @@
+body {
+    display: flex;
+}
+form {
+    background-color: white;
+    padding: 1rem;
+    border: 0.2rem solid black;
+}
+input {
+    display: flex;
+    display: block;
+    margin-bottom: 0.2rem;
+    width: 100%;
+}
+
+button {
+    background-color: green;
+    width: 100%;
+    color: white;
+}
+label {
+    display: block;
+}
+textarea {
+    width: 100%;
+}
